@@ -1,12 +1,14 @@
 ;; Pegasus itself
 (formula
  (description "Pegasus")
- (version "0.1.0")
+ (version #f)
  (homepage :url "https://github.com/ktakashi/pegasus-library")
  (author :name "Takashi Kato" :email "ktakashi@ymail.com")
  (source 
   :type zip
-  :url "https://github.com/ktakashi/pegasus-library/archive/0.1.0.zip")
+  ;; For now use the master.
+  ;; TODO change it when it's alpha release
+  :url "https://github.com/ktakashi/pegasus-library/archive/master.zip")
 
  (install (directories ("lib"))))
  
