@@ -6,4 +6,5 @@
  (source 
   :type tar :compression gzip
   :url "https://github.com/ktakashi/r7rs-postgresql/archive/15.07.21.tar.gz")
- (install (directories ("lib"))))
+ (install (directories ("lib")))
+ (tests (test :file "test.scm" :style srfi-64 :loadpath "lib")))
