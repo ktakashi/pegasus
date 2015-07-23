@@ -3,9 +3,17 @@ Pegasus
 
 Package repository for Sagittarius Scheme
 
-NOTE: currently it's even before alpha version!
+NOTE: it's still alpha version!
 
-Install pegasus
+Requirements
+============
+
+Pegasus requires `git` to install/update repository.
+
+NB: if there's enough demand, we might change not to use `git`.
+
+
+Install Pegasus
 ===============
 
 To use the repository, first you need to install pegasus itself. The very
@@ -21,12 +29,24 @@ directory.
 
 NOTE: you might need to run above command with `sudo`.
 
-We will support Windows environment very soon.
+For Windows environment, run the following command in the above library
+directory
+
+    > install.bat
+
+
+Update Pegasus
+==============
+
+To synchronise Pegasus repository, you can run the following command:
+
+    $ pegasus update
+
 
 Install package
 ===============
 
-$ pegasus install $package
+    $ pegasus install $package
 
 It will install the specified package into Sagittarius sitelib directory
 if the formula file exists.
@@ -34,6 +54,28 @@ if the formula file exists.
 Remove package
 ==============
 
-$ pegasus remove $package
+    $ pegasus remove $package
+
+If the _$package_ has child dependency and you also want to remove it, then
+you can specify `-c` option.
 
 NOTE: it won't delete directories created by install command.
+
+Search package
+==============
+
+    $ pegasus search
+
+or
+
+    $ pegasus search -p $pattern
+
+The first command lists all packages. The second command searches packages
+which match the _$pattern_.
+
+Describe package
+================
+
+    $ pegasus desc $package
+
+Shows the _$package_'s detail information.
