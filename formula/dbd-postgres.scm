@@ -1,4 +1,4 @@
-;; DBD SQLite3
+;; DBD PostgreSQL
 (formula
  (description "PostgreSQL DBD for Sagittarius")
  (version "16.10.31")
@@ -11,7 +11,3 @@
   :url "https://github.com/ktakashi/sagittarius-dbd-postgres/archive/16.10.31.zip")
 
  (install (directories ("lib"))))
-
- 
- 
- 
