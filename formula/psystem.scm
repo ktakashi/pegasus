@@ -3,6 +3,7 @@
  (description "R6RS portable environment access")
  (version "18.12.17")
  (homepage :url "https://github.com/ktakashi/r6rs-psystem")
+ (dependencies (dependency :name "pffi" :version "18.12.17"))
  (author :name "Takashi Kato" :email "ktakashi@ymail.com")
  ;;:type tar :compression gzip
  (source :type zip
